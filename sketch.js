@@ -35,7 +35,8 @@ function setup(){
     log5 = new Log(870,120,150, -PI/7);
 
     bird = new Bird(100,100);
-
+    log6 = new Log(200,200,150,PI/2);
+rubberband1 = new Rubberband(log6.body,bird.body);
 }
 
 function draw(){
@@ -61,4 +62,6 @@ function draw(){
 
     bird.display();
     platform.display();
+    log6.display();
+    rubberband1.display();
 }
